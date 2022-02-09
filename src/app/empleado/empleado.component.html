@@ -1,0 +1,17 @@
+<h1><p>{{title}}</p></h1>
+
+{{trabajadores[0]}}
+<div *ngIf="trabajadorExterno == true">
+    <button (click)="cambiarExterno(false)">Mostrar Trabajador Externo</button>
+    <ul>
+        <li>{{empleadoExt.nombre}}</li>
+        <li>{{empleadoExt.edad}}</li>
+    </ul>
+</div>
+<div *ngIf="trabajadorExterno == false">
+    <button (click)="cambiarExterno(true)">Mostrar Empleado</button>
+    <ul>
+        <li>{{empleado.nombre}}</li>
+        <li>{{empleado.edad}}</li>
+    </ul>
+</div>
