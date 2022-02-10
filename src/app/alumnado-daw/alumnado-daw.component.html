@@ -1,0 +1,10 @@
+<h1>{{title}}</h1>
+<ul>
+    <li *ngFor ="let alumno of arrayAlumnados; let i = index">
+        <strong>Alumno {{i+1}}:</strong>
+        <ul>
+            <li>{{alumno.nombre}}</li>
+            <li>{{alumno.apellidos}}</li>
+        </ul>
+    </li>
+</ul>
