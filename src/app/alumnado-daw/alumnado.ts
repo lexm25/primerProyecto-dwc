@@ -6,7 +6,7 @@ export class Alumnado{
         public fechaNac:Date,
         public poblacion:string,
         public telefono:number, 
-        public curso:number,
+        public curso:string,
         public modulos:Array<String>
     ){}
 

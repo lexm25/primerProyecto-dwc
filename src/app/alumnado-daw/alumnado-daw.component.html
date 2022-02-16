@@ -1,5 +1,5 @@
 <h1>{{title}}</h1>
-<ul>
+<!-- <ul>
     <li *ngFor ="let alumno of arrayAlumnados; let i = index">
         <strong>Alumno {{i+1}}:</strong>
         <ul>
@@ -9,22 +9,25 @@
     </li>
 </ul>
 
-<!-- <div *ngIf=" == 1">
-    <button (click)="cambiarExterno(false)">Mostrar Alumnos</button>
-    <ul>
-        <li *ngFor ="let alumno of arrayAlumnados; let i = index">
-            <strong>Alumno {{i+1}}:</strong>
-            <ul>
-                <li>{{alumno.nombre}}</li>
-                <li>{{alumno.apellidos}}</li>
-            </ul>
-        </li>
+<button (click)="alumnado('primero')">alumnado1</button>
+<div *ngIf="alumnadoUno==true">
+    <ul *ngFor="let alumno of arrayAlumnados">
+        <li *ngIf="alumno.curso=='1'">{{alumno.nombre}}</li>
     </ul>
 </div>
-<div *ngIf="trabajadorExterno == false">
-    <button (click)="cambiarExterno(true)">Mostrar Empleado</button>
-    <ul>
-        <li>{{empleado.nombre}}</li>
-        <li>{{empleado.edad}}</li>
+
+<button (click)="alumnado('segundo')">alumnado2</button>
+<div *ngIf="alumnadoSegundo==true">
+    <ul *ngFor="let alumno of arrayAlumnados">
+        <li *ngIf="alumno.curso=='2'">{{alumno.nombre}}</li>
     </ul>
-</div>  -->
+</div> -->
+
+<button [routerLink]="['/alumnado/', 1]">Alumando de primero</button>
+
+<button [routerLink]="['/alumnado/', 1]">Alumando de segundo</button>
+
+<div *ngIf="curso">
+    curso del coche: {{curso}}
+    <button (click)="onBack()">Volver</button>
+</div>

@@ -3,12 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
-export const routes: Routes = [
-{ path : 'empleado', component: EmpleadoComponent},
-{ path: 'fruta', component: AlumnadoDAWComponent},
-{ path: '', component: EmpleadoComponent},
-{ path: '**', component: EmpleadoComponent}
-];
+export const routes: Routes = [];
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
