@@ -1,5 +1,5 @@
 <h1>{{title}}</h1>
-<!-- <ul>
+<ul>
     <li *ngFor ="let alumno of arrayAlumnados; let i = index">
         <strong>Alumno {{i+1}}:</strong>
         <ul>
@@ -21,13 +21,4 @@
     <ul *ngFor="let alumno of arrayAlumnados">
         <li *ngIf="alumno.curso=='2'">{{alumno.nombre}}</li>
     </ul>
-</div> -->
-
-<button [routerLink]="['/alumnado/', 1]">Alumando de primero</button>
-
-<button [routerLink]="['/alumnado/', 1]">Alumando de segundo</button>
-
-<div *ngIf="curso">
-    curso del coche: {{curso}}
-    <button (click)="onBack()">Volver</button>
 </div>

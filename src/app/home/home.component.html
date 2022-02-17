@@ -1,1 +1,9 @@
 <h1>{{title}}</h1>
+
+<ul>
+    <li *ngFor ="let ropa of arrayRopa; let i = index">
+            {{ropa}} 
+    </li>
+</ul>
+
+<input type="text" [(ngModel)]="prenda"/><button (click)="addPrenda()">Añadir prenda</button><button>Borrar Prenda</button>
